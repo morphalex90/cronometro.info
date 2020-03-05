@@ -1,5 +1,8 @@
-jQuery(document).ready(function($){
-	$('.loader').fadeOut();
+
+var s = document.getElementsByClassName('loader');
+s = s[0].style;
+s.opacity = 1;
+(function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,40)})();
 
 
 	$(document).on('click','.start',function(){
@@ -22,7 +25,6 @@ jQuery(document).ready(function($){
 	$(document).on('click','.giro',function(){
 		$(".parziali").append('<tr><td>'+$('.tempo').html()+'</td></tr>');
 	});
-});
 
 
 var time;
