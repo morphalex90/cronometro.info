@@ -67,6 +67,23 @@ footer.footer{
     text-align: center !important;
 }
 
+.text-right {
+    text-align: right !important;
+}
+
+@media (max-width: 576px) {
+    .text-right {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-mobile-center {
+        text-align: center !important;
+    }
+}
+
+
 
 .btn {
     display: inline-block;
@@ -106,8 +123,6 @@ p {
     margin: 0 0 10px;
 }
 
-@media (max-width: 768px) {
-    .text-mobile-center {
-        text-align: center !important;
-    }
+table.table {
+    width: 100%;
 }
