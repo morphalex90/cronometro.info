@@ -1,4 +1,6 @@
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
+	$('.loader').fadeOut();
+
     jQuery('[data-toggle="tooltip"]').tooltip();
 	
 	jQuery(document).on('click','.start',function(){
