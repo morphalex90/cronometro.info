@@ -105,3 +105,9 @@ a:focus, a:hover {
 p {
     margin: 0 0 10px;
 }
+
+@media (max-width: 768px) {
+    .text-mobile-center {
+        text-align: center !important;
+    }
+}
