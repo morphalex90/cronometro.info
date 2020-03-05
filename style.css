@@ -1,9 +1,107 @@
-h1{}
-h2{font-size:20px;}
-header{background:yellow;}
-header .sitebrand{font-family: 'Nova Oval', cursive;}
-.contenuto{padding:20px 0px;}
-footer{background:black; color:white; padding:20px 0px;}
-.social{margin-top:25px;}
-#___plusone_0{vertical-align:top !important;}
-.iubenda-ibadge{margin-bottom: -6px; margin-left: 15px;}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+header {
+    background: yellow;
+}
+
+header .sitebrand {
+    font-family: 'Nova Oval', cursive;
+}
+
+main#main-content {
+    padding: 20px 0px;
+}
+
+footer.footer{
+    background:black;
+    color:#FFF;
+    padding:20px 0px;
+}
+
+.social{
+    margin-top:25px
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #2e6da4;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 10px;
+}

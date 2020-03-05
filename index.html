@@ -64,10 +64,6 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		
-		<script src="https://apis.google.com/js/platform.js" async defer>
-		  {lang: 'it'}
-		</script>
-		
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
@@ -78,6 +74,7 @@
 	
 	</head>
 	<body>
+		<a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
 		<div class="loader" style="background:#FFF; position:fixed; height:100%; width:100%; top:0; left:0; z-index:999999;"></div>
 		<header>
 			<div class="container">
@@ -86,14 +83,13 @@
 					<div class="col-sm-6">
 						<div class="social">
 							<div class="fb-like" data-href="https://www.cronometro.info" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-							<div class="g-plusone" data-size="tall" data-annotation="none" data-width="300"></div>
 						</div>
 						<h3>Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch</h3>
 					</div>
 				</div>
 			</div>
 		</header>
-		<div class="contenuto">
+		<main id="main-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 spot">
@@ -101,38 +97,31 @@
 					</div>
 					<div class="col-sm-3 inner-content">
 						<div class="tempo">00:00:00:000</div>
-						<button type="button" class="btn btn-primary start" data-toggle="tooltip" data-placement="top" title="Fai partire oppure ferma il tempo, proprio come un vero guardiano del tempo"><i class="fa fa-clock-o" aria-hidden="true"></i> Start</button>
-						<button type="button" class="btn btn-primary reset" data-toggle="tooltip" data-placement="top" title="Passato troppo tempo? Azzera tutto"><i class="fa fa-stop" aria-hidden="true"></i> Reset</button>
-						<button type="button" class="btn btn-primary giro" data-toggle="tooltip" data-placement="top" title="Hai bisogno di tenere segnati dei parziali? Fai click e verranno segnati nella tabella sotto"><i class="fa fa-slack" aria-hidden="true"></i> Lap</button>
+						<button type="button" class="btn btn-primary start" title="Fai partire oppure ferma il tempo, proprio come un vero guardiano del tempo"><i class="fa fa-clock-o" aria-hidden="true"></i> Start</button>
+						<button type="button" class="btn btn-primary reset" title="Passato troppo tempo? Azzera tutto"><i class="fa fa-stop" aria-hidden="true"></i> Reset</button>
+						<button type="button" class="btn btn-primary giro" title="Hai bisogno di tenere segnati dei parziali? Fai click e verranno segnati nella tabella sotto"><i class="fa fa-slack" aria-hidden="true"></i> Lap</button>
 						<table class="parziali">
 							<tr><th>#</th><th>Parziale</th><th>Totale</th></tr>
 						</table>
 					</div>
 					<div class="col-sm-6">
 						<p>Questo sito è nato come progetto secondario dopo avere capito che non ci sono cronometri usabili facilmente trovabili.</p>
-						<p></p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
         <footer class="footer">
 			<div class="container text-center">
-				
-				<span>Copyright &copy;</span> <a href="https://www.pieronanni.com" target="_blank" title="Piero Nanni">Piero Nanni</a> <span>2020</span>
+				<span>Copyright &copy;</span> <a href="https://www.pieronanni.com" target="_blank" title="Piero Nanni">Piero Nanni</a> <span>2020 - </span>
 				<a href="https://www.iubenda.com/privacy-policy/8086642" title="Privacy Policy" target="_blank">Privacy Policy</a>
-				<!-- <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script> -->
-				
-
-				
 			</div>
 		</footer>      
     
 		<link href="https://fonts.googleapis.com/css?family=Nova+Oval" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="/grid.css">
 		<link rel="stylesheet" href="/style.css">
 		<link rel="stylesheet" href="/css/font-awesome.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="script.js"></script>
+		<script src="/jquery.min.js"></script>
+		<script src="/script.js"></script>
 	</body>
 </html>

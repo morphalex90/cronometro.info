@@ -1,27 +1,26 @@
 jQuery(document).ready(function($){
 	$('.loader').fadeOut();
 
-    jQuery('[data-toggle="tooltip"]').tooltip();
-	
-	jQuery(document).on('click','.start',function(){
-		jQuery(this).removeClass('start').addClass('pause');
-		jQuery(this).html('Pausa');
+
+	$(document).on('click','.start',function(){
+		$(this).removeClass('start').addClass('pause');
+		$(this).html('Pause');
 		start();
 	});
 	
-	jQuery(document).on('click','.pause',function(){
-		jQuery(this).removeClass('pause').addClass('start');
-		jQuery(this).html('Start');
+	$(document).on('click','.pause',function(){
+		$(this).removeClass('pause').addClass('start');
+		$(this).html('Start');
 		pause();
 	});
 	
-	jQuery(document).on('click','.reset',function(){
-		jQuery('.pause').removeClass('pause').addClass('start');
+	$(document).on('click','.reset',function(){
+		$('.pause').removeClass('pause').addClass('start');
 		stop();
 	});
 	
-	jQuery(document).on('click','.giro',function(){
-		jQuery(".parziali").append('<tr><td>'+jQuery('.tempo').html()+'</td></tr>');
+	$(document).on('click','.giro',function(){
+		$(".parziali").append('<tr><td>'+$('.tempo').html()+'</td></tr>');
 	});
 });
 
@@ -67,7 +66,7 @@ function mostra(){
 
 	tot = tot+secondi+':';
 	tot = tot+centesimi;
-	jQuery('.tempo').html(tot);
+	$('.tempo').html(tot);
 }
 
 function cronometro(){
