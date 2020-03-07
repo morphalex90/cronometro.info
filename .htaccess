@@ -2,6 +2,10 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+<filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|svg|js|css|swf)$">
+Header set Cache-Control "max-age=84600, public"
+</filesMatch>
+
 <IfModule mod_expires.c>
   ExpiresActive On
 
