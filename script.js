@@ -1,34 +1,41 @@
-
+////////////////////// Loader fadeout
 var s = document.getElementsByClassName('loader');
 s = s[0].style;
 s.opacity = 1;
 (function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,40)})();
 
-
-	$(document).on('click','.start',function(){
-		$(this).removeClass('start').addClass('pause');
-		$(this).html('Pause');
+////////////////////// Click to start / pause
+document.querySelector('.play-pause').addEventListener('click', (e) => {
+	if( document.querySelector('.play-pause').getAttribute('data-mode') == 'play' ) {
+		document.querySelector('.play-pause').innerHTML = '<i class="icon-pause2"></i> Pause';
+		document.querySelector('.play-pause').setAttribute('data-mode', 'pause');
 		start();
-	});
-	
-	$(document).on('click','.pause',function(){
-		$(this).removeClass('pause').addClass('start');
-		$(this).html('Start');
+	} else {
+		document.querySelector('.play-pause').innerHTML = '<i class="icon-play3"></i> Start';
+		document.querySelector('.play-pause').setAttribute('data-mode', 'play');
 		pause();
-	});
-	
-	$(document).on('click','.reset',function(){
-		$('.pause').removeClass('pause').addClass('start');
-		stop();
-	});
-	
-	$(document).on('click','.giro',function(){
-		$(".parziali").append('<tr><td>'+$('.tempo').html()+'</td></tr>');
-	});
+	}
+});
+
+////////////////////// Click to reset
+document.querySelector('.reset').addEventListener('click', (e) => {
+	document.querySelector('.play-pause').innerHTML = '<i class="icon-play3"></i> Start';
+	document.querySelector('.play-pause').setAttribute('data-mode', 'play');
+	stop();
+});
+
+////////////////////// Click to save Lap
+var lapNumber = 1;
+document.querySelector('.giro').addEventListener('click', (e) => {
+	var lap = document.querySelector('.tempo').textContent;
+	document.querySelector('.parziali').insertAdjacentHTML('beforeend', '<tr><td>'+lapNumber+'</td><td>'+lap+'</td></tr>');
+	lapNumber++;
+});
+
 
 
 var time;
-var centesimi = 0;
+var millesimi = 0;
 var secondi = 0;
 var minuti = 0;
 var ore = 0;
@@ -43,39 +50,26 @@ function pause(){
 
 function stop(){
 	clearTimeout(time);
-	centesimi = secondi = minuti = ore = 0;
-	mostra();
+	millesimi = secondi = minuti = ore = 0;
+	show();
 }
 
-function mostra(){
+function show(){
 	var tot = '';
 
-	if( ore < 10 ) {
-		tot = tot+'0';
-	}
+	tot = tot+String(ore).padStart(2, '0')+':';
+	tot = tot+String(minuti).padStart(2, '0')+':';
+	tot = tot+String(secondi).padStart(2, '0')+':';
+	tot = tot+String(millesimi).padStart(3, '0');
 
-	tot = tot+ore+':';
-
-	if( minuti < 10 ) {
-		tot = tot+'0';
-	}
-
-	tot = tot+minuti+':';
-
-	if( secondi < 10 ) {
-		tot = tot+'0';
-	}
-
-	tot = tot+secondi+':';
-	tot = tot+centesimi;
-	$('.tempo').html(tot);
+	document.querySelector('.tempo').textContent = tot;
 }
 
 function cronometro(){
 	
-	centesimi++;
-	if( centesimi == 100 ){
-		centesimi = 0;
+	millesimi = millesimi + (4);
+	if( millesimi == 1000 ){
+		millesimi = 0;
 		secondi++;
 	}
 	
@@ -89,6 +83,6 @@ function cronometro(){
 		ore++;
 	}
 	
-	mostra();
-	time = setTimeout(function(){ cronometro() }, 10);
+	show();
+	time = setTimeout(function(){ cronometro() }, 4);
 }

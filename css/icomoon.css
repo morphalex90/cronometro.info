@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'cronometro';
+  src:  url('../fonts/cronometro.eot?dyox1z');
+  src:  url('../fonts/cronometro.eot?dyox1z#iefix') format('embedded-opentype'),
+    url('../fonts/cronometro.ttf?dyox1z') format('truetype'),
+    url('../fonts/cronometro.woff?dyox1z') format('woff'),
+    url('../fonts/cronometro.svg?dyox1z#cronometro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cronometro' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hashtag:before {
+  content: "\e900";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause2:before {
+  content: "\ea1d";
+}
+.icon-stop2:before {
+  content: "\ea1e";
+}
