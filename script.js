@@ -28,7 +28,7 @@ document.querySelector('.reset').addEventListener('click', (e) => {
 var lapNumber = 1;
 document.querySelector('.giro').addEventListener('click', (e) => {
 	var lap = document.querySelector('.tempo').textContent;
-	document.querySelector('.parziali').insertAdjacentHTML('beforeend', '<tr><td>'+lapNumber+'</td><td>'+lap+'</td></tr>');
+	document.querySelector('.partials').insertAdjacentHTML('beforeend', '<tr><td>'+lapNumber+'</td><td>'+lap+'</td></tr>');
 	lapNumber++;
 });
 
