@@ -1,110 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Cronometro.info</title>
 
-        <meta name="title" content="Cronometro.info | Your personal stopwatch">
-        <meta name="description" content="Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch">
-        <meta property="og:title" content="Cronometro.info | Your personal stopwatch" />
-        <meta property="og:description" content="Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch" />
-        <meta property="og:image" content="https://www.cronometro.info/apple-icon.png" />
-        <meta property="og:url" content="https://www.cronometro.info" />
-		<meta property="og:type" content="website" />
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
-		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
-		<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-		<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cronometro.info</title>
 
-		<link rel="canonical" href="https://www.cronometro.info" />
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-		
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<meta name="title" content="Cronometro.info | Your personal stopwatch">
+	<meta name="description" content="Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch">
+	<meta property="og:title" content="Cronometro.info | Your personal stopwatch" />
+	<meta property="og:description" content="Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch" />
+	<meta property="og:image" content="https://www.cronometro.info/apple-icon.png" />
+	<meta property="og:url" content="https://www.cronometro.info" />
+	<meta property="og:type" content="website" />
 
-		  ga('create', 'UA-96518216-1', 'auto');
-		  ga('set', 'anonymizeIp', true);
-		  ga('send', 'pageview');
-		</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+	<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+	<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+	<link rel="preconnect" href="https://www.facebook.com" crossorigin>
 
-		<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<link rel="canonical" href="https://www.cronometro.info" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-96518216-1', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('send', 'pageview');
+	</script>
+
+	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<script>
 		  (adsbygoogle = window.adsbygoogle || []).push({
 			google_ad_client: "ca-pub-8946052108402323",
 			enable_page_level_ads: true
 		  });
 		</script> -->
-	
-	</head>
-	<body>
 
-		<div id="fb-root"></div>
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=618575611669844&autoLogAppEvents=1"></script>
+</head>
 
-		<a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
-		<div class="loader" style="background:#FFF; position:fixed; height:100%; width:100%; top:0; left:0; z-index:999999;"></div>
-		<header class="text-mobile-center text-right">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-5 sitebrand"><h1>Cronometro.info</h1><h2>Your personal stopwatch</h2></div>
-					<div class="col-sm-7">
-						<div class="social">
-							<div class="fb-like" data-href="https://www.cronometro.info" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
-						</div>
-						<h3>Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch</h3>
+<body>
+
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0&appId=618575611669844&autoLogAppEvents=1"></script>
+
+	<a href="#main-content" class="visually-hidden focusable skip-link">Skip to main content</a>
+	<div class="loader"
+		style="background:#FFF; position:fixed; height:100%; width:100%; top:0; left:0; z-index:999999;"></div>
+	<header class="text-mobile-center text-right">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 sitebrand">
+					<h1>Cronometro.info</h1>
+					<h2>Your personal stopwatch</h2>
+				</div>
+				<div class="col-sm-7">
+					<div class="social">
+						<div class="fb-like" data-href="https://www.cronometro.info" data-width=""
+							data-layout="button_count" data-action="like" data-size="small" data-share="false"></div>
 					</div>
+					<h3>Do YOU want to be a time guardian? Now you can! Try this wonderful stopwatch</h3>
 				</div>
 			</div>
-		</header>
-		<main id="main-content" class="text-mobile-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-5 inner-content text-right text-mobile-center">
-						<div class="tempo">00:00:00:000</div>
-						<button type="button" class="btn btn-primary ss play-pause" data-mode="play" title="Start or stop time, as a truly time guardian"><i class="icon-play3"></i> Start</button>
-						<button type="button" class="btn btn-primary reset" title="Too much time has passed? Reset all"><i class="icon-stop2"></i> Reset</button>
-						<button type="button" class="btn btn-primary giro" title="Do you need to keep track of partial results? Click there and they will be saved into the table below"><i class="icon-hashtag"></i> Partial</button>
-						<table class="table partials">
-							<tr><th>#</th><th>Partial</th></tr>
-						</table>
-					</div>
-					<div class="col-sm-7">
-						<p>This project has been created after understood that there are no easy to use online stopwatches.</p>
-					</div>
+		</div>
+	</header>
+	<main id="main-content" class="text-mobile-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 inner-content text-right text-mobile-center">
+					<div class="tempo">00:00:00:000</div>
+					<button type="button" class="btn btn-primary ss play-pause" data-mode="play"
+						title="Start or stop time, as a truly time guardian"><i class="icon-play3"></i> Start</button>
+					<button type="button" class="btn btn-primary reset" title="Too much time has passed? Reset all"><i
+							class="icon-stop2"></i> Reset</button>
+					<button type="button" class="btn btn-primary giro"
+						title="Do you need to keep track of partial results? Click there and they will be saved into the table below"><i
+							class="icon-hashtag"></i> Partial</button>
+					<table class="table partials">
+						<tr>
+							<th>#</th>
+							<th>Partial</th>
+						</tr>
+					</table>
+				</div>
+				<div class="col-sm-7">
+					<p>This project has been created after understood that there are no easy to use online stopwatches.
+					</p>
 				</div>
 			</div>
-		</main>
-        <footer class="footer text-center">
-			<span>Copyright &copy;</span> <a href="https://www.pieronanni.com" target="_blank" title="Piero Nanni">Piero Nanni</a> <span>2020 - </span>
-			<a href="https://www.iubenda.com/privacy-policy/8086642" title="Privacy Policy" target="_blank">Privacy Policy</a>	
-		</footer>      
-    
-		<link href="https://fonts.googleapis.com/css?family=Nova+Oval" rel="stylesheet">
-		<link rel="stylesheet" href="/css/grid.css">
-		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="/css/icomoon.css">
-		<script src="/script.js"></script>
-	</body>
+		</div>
+	</main>
+	<footer class="footer text-center">
+		<span>Copyright &copy;</span> <a href="https://www.pieronanni.com" target="_blank" title="Piero Nanni">Piero
+			Nanni</a> <span>2020 - </span>
+		<a href="https://www.iubenda.com/privacy-policy/8086642" title="Privacy Policy" target="_blank">Privacy
+			Policy</a>
+	</footer>
+
+	<link href="https://fonts.googleapis.com/css?family=Nova+Oval" rel="stylesheet">
+	<link rel="stylesheet" href="/css/grid.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<script src="/script.js"></script>
+</body>
+
 </html>
