@@ -1,9 +1,11 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -14,13 +16,18 @@ body {
 .visually-hidden {
     position: absolute !important;
     overflow: hidden;
-    clip: rect(1px,1px,1px,1px);
+    clip: rect(1px, 1px, 1px, 1px);
     width: 1px;
     height: 1px;
     word-wrap: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
@@ -53,13 +60,13 @@ main#main-content {
     padding: 20px 0px;
 }
 
-footer.footer{
-    background:black;
+footer.footer {
+    background: #000;
     color: #FFF;
     padding: 20px 0px;
 }
 
-.social{
+.social {
     margin-top: 25px
 }
 
@@ -82,8 +89,6 @@ footer.footer{
         text-align: center !important;
     }
 }
-
-
 
 .btn {
     display: inline-block;
@@ -114,7 +119,8 @@ a {
     text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
     color: #23527c;
     text-decoration: underline;
 }

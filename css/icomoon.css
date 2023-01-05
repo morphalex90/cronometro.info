@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'cronometro';
-  src:  url('../fonts/cronometro.eot?dyox1z');
-  src:  url('../fonts/cronometro.eot?dyox1z#iefix') format('embedded-opentype'),
+  src: url('../fonts/cronometro.eot?dyox1z');
+  src: url('../fonts/cronometro.eot?dyox1z#iefix') format('embedded-opentype'),
     url('../fonts/cronometro.ttf?dyox1z') format('truetype'),
     url('../fonts/cronometro.woff?dyox1z') format('woff'),
     url('../fonts/cronometro.svg?dyox1z#cronometro') format('svg');
@@ -28,12 +28,15 @@ i {
 .icon-hashtag:before {
   content: "\e900";
 }
+
 .icon-play3:before {
   content: "\ea1c";
 }
+
 .icon-pause2:before {
   content: "\ea1d";
 }
+
 .icon-stop2:before {
   content: "\ea1e";
 }

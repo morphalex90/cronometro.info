@@ -33,7 +33,6 @@ document.querySelector('.giro').addEventListener('click', (e) => {
 });
 
 
-
 var time;
 var millesimi = 0;
 var secondi = 0;
